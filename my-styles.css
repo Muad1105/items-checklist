@@ -1,0 +1,172 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-transform: capitalize;
+  background-color: rgb(220, 232, 232);
+  transition: 0.3s;
+}
+
+.section-center {
+  position: absolute;
+  /* display: grid; */
+  top: 3px;
+  left: 5%;
+  /* transform: translate(-50%, -70%); */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* margin: 0 auto; */
+  height: auto;
+  width: 540px;
+  max-width: 540px;
+  margin: 2rem;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 10px 10px 17px 3px rgba(0, 0, 0, 0.3);
+}
+
+.alert {
+  display: grid;
+  /* align-items: center; */
+  width: 100%;
+  height: 20px;
+  border-radius: 4px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.alert-danger {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.alert-success {
+  background-color: rgba(43, 255, 0, 0.5);
+}
+
+.grocery-form {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+}
+
+.grocery-form h3 {
+  color: rgb(17, 50, 53);
+  padding: 2rem;
+  letter-spacing: 3px;
+}
+
+.form-controls {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+input {
+  width: 80%;
+  height: 30px;
+  border: transparent;
+  margin-bottom: 1rem;
+  background-color: rgba(220, 230, 232, 0.5);
+  border-radius: 6px 0 0 6px;
+  padding: 3px 3px 3px 10px;
+}
+
+input::placeholder {
+  color: rgba(66, 66, 199, 0.8);
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+.submit-btn {
+  padding: 0;
+  margin-left: -1px;
+  height: 30px;
+  width: 80px;
+  border-width: 0;
+  border-color: transparent;
+  background-color: rgba(92, 190, 212, 0.5);
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: rgba(92, 190, 212);
+  color: white;
+}
+
+.grocery-container {
+  text-align: center;
+  /* margin: 2rem; */
+  /* padding: 3rem; */
+  transition: 0.3s;
+  visibility: hidden;
+  /* display: none; */
+}
+
+.show-container {
+  visibility: visible;
+}
+.grocery-list {
+  width: 100%;
+  /* display: flex; */
+  /* justify-content: center; */
+  margin: 0 25px;
+}
+.grocery-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 1.5rem;
+  width: 90%;
+  padding: 0.25rem 1rem;
+  margin-bottom: 0.5rem;
+  /* border: 1px solid red; */
+  border-radius: 4px;
+}
+
+.grocery-item:hover {
+  background-color: rgb(187, 187, 187, 0.3);
+}
+.inline {
+  display: inline;
+}
+.title {
+  display: inline;
+  letter-spacing: 1px;
+  color: rgb(0, 89, 96);
+  padding-left: 5px;
+}
+
+.edit-btn,
+.delete-btn {
+  background: transparent;
+  border-color: transparent;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  color: rgb(5, 254, 5);
+}
+
+.delete-btn {
+  color: red;
+}
+
+.clear-btn {
+  color: rgb(215, 34, 34);
+  font-size: 18px;
+  border-color: transparent;
+  background-color: white;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
